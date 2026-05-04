@@ -152,8 +152,8 @@ export default function ProductsCatalog() {
         <div className="container py-3 flex items-center gap-3 text-sm text-amber-800">
           <FileText size={15} className="flex-shrink-0 text-amber-600" />
           <span>
-            <strong>This is an informational equipment library.</strong> Equipment is configured and dispensed through clinical evaluation — not purchased directly. For transactional purchases, visit our{" "}
-            <Link href="/shop" className="font-bold underline underline-offset-2">Liberty Care Shop</Link>.
+            <strong>This is an informational equipment library.</strong> Equipment is evaluated, prescribed, and dispensed through our certified team — not purchased online. To purchase directly, visit{" "}
+            <a href="https://shop.bluebaymobility.com" target="_blank" rel="noopener noreferrer" className="font-bold underline underline-offset-2">shop.bluebaymobility.com</a>.
           </span>
         </div>
       </div>

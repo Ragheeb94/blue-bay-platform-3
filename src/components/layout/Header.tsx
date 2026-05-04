@@ -28,7 +28,7 @@ const navItems = [
     ],
   },
   { label: "How It Works", href: "/how-it-works" },
-  { label: "Shop", href: "/shop" },
+  { label: "Shop", href: "https://shop.bluebaymobility.com" },
   { label: "Track Order", href: "/tracking" },
 ];
 
@@ -93,6 +93,8 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-semibold text-gray-700 hover:text-navy hover:bg-gray-50 transition-all"
                     style={{ color: openDropdown === item.label ? "var(--navy)" : undefined }}
                   >

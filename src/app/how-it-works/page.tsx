@@ -12,7 +12,7 @@ const steps = [
     icon: FileText,
     title: "Submit your request",
     duration: "5 minutes",
-    desc: "Browse our product catalog and add items to your cart, or fill out the consultation form. You can also call us directly. There's no commitment — just an opening conversation.",
+    desc: "Browse our equipment catalog or fill out the consultation form to get started. You can also call us directly. There's no commitment — just an opening conversation.",
     checklist: ["Browse products online or call us", "Tell us about your condition and goals", "We'll confirm receipt within 4 business hours"],
   },
   {

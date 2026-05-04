@@ -7,7 +7,7 @@ import { useCart } from "@/context/CartContext";
 
 const navItems = [
   {
-    label: "Products",
+    label: "Equipment Hub",
     href: "/products",
     dropdown: [
       { label: "Power Wheelchairs", href: "/products?category=power-wheelchairs" },
@@ -28,6 +28,7 @@ const navItems = [
     ],
   },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "Shop", href: "/shop" },
   { label: "Track Order", href: "/tracking" },
 ];
 

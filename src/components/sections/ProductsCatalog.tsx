@@ -4,12 +4,11 @@ import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ShoppingCart, MessageCircle, Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, FileText, Phone } from "lucide-react";
 import { products, type ProductCategory } from "@/lib/data";
-import { useCart } from "@/context/CartContext";
 
 const categories: { value: "all" | ProductCategory; label: string }[] = [
-  { value: "all", label: "All Products" },
+  { value: "all", label: "All Equipment" },
   { value: "power-wheelchairs", label: "Power Wheelchairs" },
   { value: "manual-wheelchairs", label: "Manual Wheelchairs" },
   { value: "seating-positioning", label: "Seating & Positioning" },
@@ -19,37 +18,15 @@ const categories: { value: "all" | ProductCategory; label: string }[] = [
 ];
 
 const badgeColors: Record<string, string> = {
-  "CRT Required": "bg-orange-50 text-orange-700 border-orange-200",
+  "CRT Required":       "bg-orange-50 text-orange-700 border-orange-200",
   "Insurance Eligible": "bg-green-50 text-green-700 border-green-200",
-  "Ready to Ship": "bg-blue-50 text-blue-700 border-blue-200",
-  "Ultralight": "bg-purple-50 text-purple-700 border-purple-200",
-  "Custom Fit": "bg-indigo-50 text-indigo-700 border-indigo-200",
-  "Lightweight": "bg-teal-50 text-teal-700 border-teal-200",
+  "Ultralight":         "bg-purple-50 text-purple-700 border-purple-200",
+  "Custom Fit":         "bg-indigo-50 text-indigo-700 border-indigo-200",
+  "Active Positioning": "bg-blue-50 text-blue-700 border-blue-200",
+  "Tilt-in-Space":      "bg-teal-50 text-teal-700 border-teal-200",
 };
 
 function ProductCard({ product }: { product: (typeof products)[0] }) {
-  const { dispatch } = useCart();
-  const [added, setAdded] = useState(false);
-
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (product.requiresConsultation || !product.price) return;
-    dispatch({
-      type: "ADD_ITEM",
-      payload: {
-        slug: product.slug,
-        name: product.name,
-        brand: product.brand,
-        price: product.price,
-        priceLabel: product.priceRange,
-        image: product.image,
-        categoryLabel: product.categoryLabel,
-      },
-    });
-    setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
-  };
-
   return (
     <motion.div
       layout
@@ -63,6 +40,7 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
         whileHover={{ y: -6, boxShadow: "0 20px 60px rgba(10,36,99,0.12)" }}
         transition={{ duration: 0.25 }}
       >
+        {/* Image */}
         <Link href={`/products/${product.slug}`} className="block relative h-52 overflow-hidden bg-gray-50">
           <motion.div whileHover={{ scale: 1.06 }} transition={{ duration: 0.4 }} className="absolute inset-0">
             <Image src={product.image} alt={product.name} fill className="object-cover" />
@@ -87,9 +65,10 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
           </div>
         </Link>
 
+        {/* Body */}
         <div className="p-5 flex flex-col flex-1">
           <div className="text-xs text-gray-400 font-medium mb-0.5">
-            {product.categoryLabel} · {product.brand}
+            {product.categoryLabel} · {product.manufacturer}
           </div>
           <Link href={`/products/${product.slug}`}>
             <h3 className="font-black text-base mb-1.5 hover:text-sky-600 transition-colors line-clamp-1" style={{ color: "var(--navy)" }}>
@@ -100,7 +79,7 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
 
           {product.goodFor.length > 0 && (
             <div className="mb-4">
-              <p className="text-xs font-semibold text-gray-400 mb-1.5">Good for:</p>
+              <p className="text-xs font-semibold text-gray-400 mb-1.5 uppercase tracking-wide">Indicated for:</p>
               <ul className="space-y-1">
                 {product.goodFor.slice(0, 2).map((g) => (
                   <li key={g} className="flex items-center gap-1.5 text-xs text-gray-600">
@@ -112,32 +91,21 @@ function ProductCard({ product }: { product: (typeof products)[0] }) {
             </div>
           )}
 
-          <div className="mt-auto pt-3 border-t border-gray-100">
-            <div className="text-base font-black mb-3" style={{ color: "var(--navy)" }}>
-              {product.priceRange}
-            </div>
-            <div className="flex gap-2">
-              <Link href={`/products/${product.slug}`} className="btn btn-sm btn-outline flex-1 justify-center text-xs">
-                View Details
-              </Link>
-              {product.requiresConsultation ? (
-                <Link href="/consultation" className="btn btn-sm btn-primary flex-1 justify-center text-xs">
-                  <MessageCircle size={13} />
-                  Consult
-                </Link>
-              ) : (
-                <button
-                  onClick={handleAddToCart}
-                  className="btn btn-sm btn-primary flex-1 justify-center text-xs"
-                >
-                  {added ? (
-                    <><Check size={13} /> Added</>
-                  ) : (
-                    <><ShoppingCart size={13} /> Add</>
-                  )}
-                </button>
-              )}
-            </div>
+          <div className="mt-auto pt-3 border-t border-gray-100 flex gap-2">
+            <Link
+              href={`/products/${product.slug}`}
+              className="btn btn-sm btn-outline flex-1 justify-center text-xs"
+            >
+              <FileText size={12} />
+              View Specs
+            </Link>
+            <Link
+              href="/consultation"
+              className="btn btn-sm btn-primary flex-1 justify-center text-xs"
+            >
+              <Phone size={12} />
+              Request Info
+            </Link>
           </div>
         </div>
       </motion.div>
@@ -155,7 +123,7 @@ export default function ProductsCatalog() {
   }, [searchParams]);
 
   const filtered = active === "all" ? products : products.filter((p) => p.category === active);
-  const activeLabel = categories.find((c) => c.value === active)?.label ?? "All Products";
+  const activeLabel = categories.find((c) => c.value === active)?.label ?? "All Equipment";
 
   return (
     <>
@@ -170,12 +138,25 @@ export default function ProductsCatalog() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="section-label mb-3" style={{ color: "var(--sky)" }}>Product Catalog</div>
+            <div className="section-label mb-3" style={{ color: "var(--sky)" }}>Rehab Equipment Hub</div>
             <h1 className="text-3xl md:text-4xl font-black text-white mb-2">{activeLabel}</h1>
-            <p className="text-white/60">{filtered.length} product{filtered.length !== 1 ? "s" : ""} available</p>
+            <p className="text-white/60 text-sm max-w-xl">
+              Clinical reference library for therapists, ATPs, and rehab professionals. All equipment is evaluated and fitted through our certified team — not sold direct.
+            </p>
           </motion.div>
         </div>
       </section>
+
+      {/* Clinical info bar */}
+      <div className="bg-amber-50 border-b border-amber-100">
+        <div className="container py-3 flex items-center gap-3 text-sm text-amber-800">
+          <FileText size={15} className="flex-shrink-0 text-amber-600" />
+          <span>
+            <strong>This is an informational equipment library.</strong> Equipment is configured and dispensed through clinical evaluation — not purchased directly. For transactional purchases, visit our{" "}
+            <Link href="/shop" className="font-bold underline underline-offset-2">Liberty Care Shop</Link>.
+          </span>
+        </div>
+      </div>
 
       {/* Filter bar */}
       <div className="sticky top-16 z-20 bg-white border-b border-gray-100 shadow-sm">
@@ -202,10 +183,7 @@ export default function ProductsCatalog() {
       {/* Grid */}
       <section className="section bg-white">
         <div className="container">
-          <motion.div
-            layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
+          <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
               {filtered.map((p) => (
                 <ProductCard key={p.slug} product={p} />
@@ -217,7 +195,7 @@ export default function ProductsCatalog() {
             <div className="text-center py-20 text-gray-400">
               <p className="text-lg font-medium">No products in this category yet.</p>
               <button onClick={() => setActive("all")} className="btn btn-outline mt-4">
-                View all products
+                View all equipment
               </button>
             </div>
           )}
@@ -226,20 +204,38 @@ export default function ProductsCatalog() {
 
       {/* CTA */}
       <section className="py-14" style={{ background: "var(--gray-50)" }}>
-        <div className="container text-center">
-          <h2 className="text-2xl font-black mb-3" style={{ color: "var(--navy)" }}>
-            Not sure what you need?
-          </h2>
-          <p className="text-gray-500 mb-6 max-w-md mx-auto">
-            Our certified ATPs help you find the right equipment based on your condition, lifestyle, and insurance.
-          </p>
-          <Link href="/quiz" className="btn btn-primary mr-3">
-            Take the Product Finder Quiz
-            <ArrowRight size={16} />
-          </Link>
-          <Link href="/consultation" className="btn btn-outline">
-            Book Consultation
-          </Link>
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="card p-8">
+              <h3 className="text-xl font-black mb-2" style={{ color: "var(--navy)" }}>
+                Therapists & ATPs
+              </h3>
+              <p className="text-gray-500 text-sm mb-5">
+                Refer a patient or request a joint evaluation. Our certified ATPs collaborate with OTs, PTs, and prescribing physicians on complex rehab cases.
+              </p>
+              <Link href="/consultation" className="btn btn-primary btn-sm">
+                Submit a Referral
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+            <div className="card p-8">
+              <h3 className="text-xl font-black mb-2" style={{ color: "var(--navy)" }}>
+                Patients & Caregivers
+              </h3>
+              <p className="text-gray-500 text-sm mb-5">
+                Not sure what equipment you need? Take our product finder quiz or book a free consultation — we handle the evaluation, documentation, and insurance.
+              </p>
+              <div className="flex gap-3">
+                <Link href="/quiz" className="btn btn-outline btn-sm">
+                  Take the Quiz
+                </Link>
+                <Link href="/consultation" className="btn btn-primary btn-sm">
+                  Book Consultation
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

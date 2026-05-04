@@ -216,7 +216,7 @@ export default function QuizPage() {
                       <h3 className="font-black text-sm mb-1" style={{ color: "var(--navy)" }}>{p.name}</h3>
                       <p className="text-xs text-gray-500 line-clamp-2 mb-2">{p.tagline}</p>
                       <div className="flex items-center justify-between">
-                        <span className="text-sm font-black" style={{ color: "var(--navy)" }}>{p.priceRange}</span>
+                        <span className="text-sm font-black" style={{ color: "var(--navy)" }}>{p.manufacturer}</span>
                         <Link href={`/products/${p.slug}`} className="text-xs font-bold flex items-center gap-1" style={{ color: "var(--sky-dark)" }}>
                           View <ArrowRight size={11} />
                         </Link>

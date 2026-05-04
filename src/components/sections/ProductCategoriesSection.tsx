@@ -9,44 +9,50 @@ const categories = [
   {
     slug: "power-wheelchairs",
     label: "Power Wheelchairs",
-    desc: "Rehab-grade and consumer power chairs for full-time users with complex or moderate support needs.",
+    desc: "Complex Rehab Technology (CRT) power chairs from Permobil and Quickie — rear-wheel, front-wheel, and mid-wheel drive with full power positioning.",
     image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&fit=crop",
-    count: "4 products",
+    count: "5 products",
+    manufacturers: ["Permobil", "Sunrise Medical"],
   },
   {
     slug: "manual-wheelchairs",
     label: "Manual Wheelchairs",
-    desc: "Custom ultralight titanium frames and reliable everyday chairs for self-propellers and assisted users.",
+    desc: "Custom ultralight rigid frames in titanium (TiLite Aero Z) and aluminum (Quickie GT Sport) — built to your exact measurements by our certified ATPs.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&fit=crop",
     count: "2 products",
+    manufacturers: ["Sunrise Medical"],
   },
   {
     slug: "seating-positioning",
     label: "Seating & Positioning",
-    desc: "Air-cell cushions, gel cushions, and positioning systems for pressure management and postural support.",
+    desc: "Clinical seating systems and pressure management cushions from Jay (Sunrise Medical) and ROHO (Permobil) — evaluated and configured for each user.",
     image: "https://images.unsplash.com/photo-1584145798265-b286d367426f?w=600&q=80&fit=crop",
     count: "3 products",
+    manufacturers: ["Permobil", "Sunrise Medical"],
   },
   {
     slug: "power-scooters",
     label: "Power Scooters",
-    desc: "Travel-friendly and everyday scooters for community independence — from lightweight folders to long-range models.",
+    desc: "Travel-friendly and full-featured scooters from Pride Mobility — from the 5-piece Go-Go for travel to the long-range Revo 2.0 for daily community use.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop",
-    count: "3 products",
+    count: "2 products",
+    manufacturers: ["Pride Mobility"],
   },
   {
     slug: "walkers-rollators",
     label: "Walkers & Rollators",
-    desc: "Lightweight rollators and walkers for users who need stability support while staying mobile.",
+    desc: "Lightweight aluminum and carbon fibre rollators and walkers from Future Mobility — for post-surgical recovery and active daily use.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80&fit=crop",
     count: "3 products",
+    manufacturers: ["Future Mobility"],
   },
   {
     slug: "transfer-aids",
     label: "Transfer Aids",
-    desc: "Bathtub transfer benches and transfer equipment for safe daily transfers with or without caregiver help.",
+    desc: "Bath transfer systems for safe, independent bathtub entry — designed for users who cannot step over the tub edge safely.",
     image: "https://images.unsplash.com/photo-1584998604882-94bf3d6e3b0e?w=600&q=80&fit=crop",
     count: "1 product",
+    manufacturers: ["Future Mobility"],
   },
 ];
 
@@ -58,12 +64,12 @@ export default function ProductCategoriesSection() {
     <section className="section bg-white">
       <div className="container">
         <AnimateIn className="text-center mb-12">
-          <div className="section-label mb-3">Our Products</div>
+          <div className="section-label mb-3">Rehab Equipment Hub</div>
           <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ color: "var(--navy)" }}>
             Equipment for every mobility need
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            From complex rehab technology to everyday mobility aids — we carry and configure equipment across every category.
+            Clinical reference library featuring Permobil, Sunrise Medical, Pride Mobility, and Future Mobility — evaluated and configured by our certified ATP team.
           </p>
         </AnimateIn>
 
@@ -92,9 +98,14 @@ export default function ProductCategoriesSection() {
                     <h3 className="text-lg font-black mb-2 group-hover:text-sky-600 transition-colors" style={{ color: "var(--navy)" }}>
                       {cat.label}
                     </h3>
-                    <p className="text-sm text-gray-500 leading-relaxed mb-4">{cat.desc}</p>
+                    <p className="text-sm text-gray-500 leading-relaxed mb-3">{cat.desc}</p>
+                    <div className="flex flex-wrap gap-1 mb-4">
+                      {cat.manufacturers.map((m) => (
+                        <span key={m} className="text-xs font-semibold px-2 py-0.5 rounded bg-gray-100 text-gray-500">{m}</span>
+                      ))}
+                    </div>
                     <span className="inline-flex items-center gap-1.5 text-sm font-bold group-hover:gap-2.5 transition-all" style={{ color: "var(--sky-dark)" }}>
-                      Browse products <ArrowRight size={14} />
+                      Browse equipment <ArrowRight size={14} />
                     </span>
                   </div>
                 </motion.div>
@@ -105,7 +116,7 @@ export default function ProductCategoriesSection() {
 
         <AnimateIn className="text-center mt-10">
           <Link href="/products" className="btn btn-outline">
-            View All Products
+            Browse All Equipment
             <ArrowRight size={16} />
           </Link>
         </AnimateIn>

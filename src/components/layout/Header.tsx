@@ -2,8 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, ShoppingCart, Menu, X, ChevronDown } from "lucide-react";
-import { useCart } from "@/context/CartContext";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 
 const navItems = [
   {
@@ -33,7 +32,6 @@ const navItems = [
 ];
 
 export default function Header() {
-  const { totalItems, dispatch } = useCart();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -148,21 +146,6 @@ export default function Header() {
               >
                 Book Consultation
               </Link>
-              <button
-                onClick={() => dispatch({ type: "OPEN" })}
-                className="relative p-2.5 rounded-lg hover:bg-gray-100 transition-colors"
-                aria-label="Open cart"
-              >
-                <ShoppingCart size={20} style={{ color: "var(--navy)" }} />
-                {totalItems > 0 && (
-                  <span
-                    className="absolute -top-1 -right-1 w-5 h-5 rounded-full text-white text-xs flex items-center justify-center font-bold"
-                    style={{ background: "var(--sky)" }}
-                  >
-                    {totalItems}
-                  </span>
-                )}
-              </button>
               <button
                 className="lg:hidden p-2.5 rounded-lg hover:bg-gray-100 transition-colors"
                 onClick={() => setMobileOpen(!mobileOpen)}

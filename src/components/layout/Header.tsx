@@ -28,7 +28,7 @@ const navItems = [
     ],
   },
   { label: "How It Works", href: "/how-it-works" },
-  { label: "Shop", href: "https://blue-bay-shop.vercel.app" },
+  { label: "Shop", href: "/shop" },
   { label: "Track Order", href: "/tracking" },
 ];
 

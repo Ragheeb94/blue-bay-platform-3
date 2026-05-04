@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Blue Bay Mobility Inc. | Complex Rehab Technology — Tustin, CA",
+    default: "Blue Bay Mobility Inc. | Complex Rehab Technology, Tustin, CA",
     template: "%s | Blue Bay Mobility",
   },
   description:

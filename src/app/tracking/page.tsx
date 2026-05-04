@@ -124,7 +124,7 @@ export default function TrackingPage() {
             <AnimateIn>
               <h2 className="text-xl font-black mb-3" style={{ color: "var(--navy)" }}>How order tracking works</h2>
               <p className="text-gray-500 text-sm leading-relaxed">
-                When you submit a request or order, we'll email you an order number. Enter it above to see exactly where your equipment is in our 6-stage process — from referral received to in-home delivery.
+                When you submit a request or order, we'll email you an order number. Enter it above to see exactly where your equipment is in our 6-stage process, from referral received to in-home delivery.
               </p>
               <p className="text-gray-400 text-xs mt-4">Try <strong>{DEMO_ORDER}</strong> to see a demo</p>
             </AnimateIn>

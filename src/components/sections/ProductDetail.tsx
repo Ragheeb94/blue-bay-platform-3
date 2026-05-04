@@ -43,7 +43,7 @@ export default function ProductDetail({ product, related }: Props) {
         <div className="container py-3 flex items-center gap-3 text-sm text-amber-800">
           <FileText size={15} className="flex-shrink-0 text-amber-600" />
           <span>
-            <strong>Clinical reference only.</strong> This equipment is not sold direct — it is evaluated, prescribed, and dispensed through our certified rehab team.
+            <strong>Clinical reference only.</strong> This equipment is not sold direct, it is evaluated, prescribed, and dispensed through our certified rehab team.
           </span>
         </div>
       </div>
@@ -229,7 +229,7 @@ export default function ProductDetail({ product, related }: Props) {
         <div className="container text-center">
           <h2 className="text-2xl font-black text-white mb-3">Ready to get evaluated?</h2>
           <p className="text-white/60 mb-6 max-w-md mx-auto">
-            Our certified ATPs coordinate the evaluation, insurance documentation, and equipment configuration — from referral to delivery.
+            Our certified ATPs coordinate the evaluation, insurance documentation, and equipment configuration, from referral to delivery.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Link href="/consultation" className="btn btn-lg" style={{ background: "var(--sky)", color: "white", border: "none" }}>

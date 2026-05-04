@@ -7,19 +7,19 @@ import AnimateIn from "@/components/ui/AnimateIn";
 
 const primaryCategories = [
   {
-    slug: "manual-wheelchairs",
-    label: "Manual Wheelchairs",
-    desc: "Your mobility chair options can be overwhelming, but we can help you along the way. Discover the best custom wheelchair options that fit your lifestyle and needs.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&fit=crop",
-    manufacturers: ["Sunrise Medical", "TiLite", "Quickie"],
+    slug: "power-wheelchairs",
+    label: "Power Wheelchairs",
+    desc: "Blue Bay carries a full range of complex rehab power wheelchairs. Every chair is custom-configured to your body measurements, seating needs, and insurance coverage by our certified ATP team.",
+    image: "https://permobilwebcdn.azureedge.net/media/ukijubtz/m5-corpus_man-_driving-in-park_01_web.jpg",
+    manufacturers: ["Permobil", "Sunrise Medical"],
     imageLeft: false,
   },
   {
-    slug: "power-wheelchairs",
-    label: "Power Wheelchairs",
-    desc: "We provide a wide range of power wheelchairs tailored to meet your unique needs and lifestyle. From complex chairs with advanced positioning to compact everyday models.",
-    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80&fit=crop",
-    manufacturers: ["Permobil", "Sunrise Medical"],
+    slug: "manual-wheelchairs",
+    label: "Manual Wheelchairs",
+    desc: "From ultralight titanium rigid frames to folding travel chairs, we help match you with the right manual wheelchair based on a thorough clinical evaluation of your body, lifestyle, and goals.",
+    image: "https://www.sunrisemedical.ca/getmedia/90e92afb-daa5-4c6e-8dee-e8a77cdc252f/product-quickie-xenon.jpg.aspx?width=700",
+    manufacturers: ["Sunrise Medical", "TiLite", "Quickie"],
     imageLeft: true,
   },
 ];
@@ -50,14 +50,14 @@ export default function ProductCategoriesSection() {
         <AnimateIn className="text-center mb-16">
           <div className="section-label mb-3">Rehab Equipment Hub</div>
           <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ color: "var(--navy)" }}>
-            Adult mobility solutions
+            Complex rehab equipment, configured for you
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            Our complex mobility solutions are tailored to your body and your needs — evaluated and configured by our certified ATP team.
+            Every chair, cushion, and positioning system we carry is evaluated and custom-configured by our certified ATP team. No online ordering. No guesswork.
           </p>
         </AnimateIn>
 
-        {/* Primary alternating categories — Numotion style */}
+        {/* Primary alternating categories */}
         <div className="space-y-16 mb-16">
           {primaryCategories.map((cat, i) => (
             <motion.div
@@ -102,7 +102,7 @@ export default function ProductCategoriesSection() {
           ))}
         </div>
 
-        {/* Secondary categories — small tile grid */}
+        {/* Secondary categories, small tile grid */}
         <div>
           <AnimateIn>
             <h3 className="text-xl font-black mb-6 text-center" style={{ color: "var(--navy)" }}>Adaptive living essentials</h3>

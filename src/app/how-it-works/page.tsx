@@ -12,7 +12,7 @@ const steps = [
     icon: FileText,
     title: "Submit your request",
     duration: "5 minutes",
-    desc: "Browse our equipment catalog or fill out the consultation form to get started. You can also call us directly. There's no commitment — just an opening conversation.",
+    desc: "Browse our equipment catalog or fill out the consultation form to get started. You can also call us directly. There's no commitment, just an opening conversation.",
     checklist: ["Browse products online or call us", "Tell us about your condition and goals", "We'll confirm receipt within 4 business hours"],
   },
   {
@@ -28,7 +28,7 @@ const steps = [
     icon: ClipboardCheck,
     title: "Clinical evaluation",
     duration: "1–2 hours",
-    desc: "We schedule a thorough evaluation — in your home or at your clinic — with your occupational therapist or physical therapist present. We assess your needs, measure your body, and identify the right equipment.",
+    desc: "We schedule a thorough evaluation, in your home or at your clinic, with your occupational therapist or physical therapist present. We assess your needs, measure your body, and identify the right equipment.",
     checklist: ["In-home or clinic evaluation (your choice)", "OT or PT included in the session", "Body measurements and functional assessment", "Equipment recommendations reviewed with you"],
   },
   {
@@ -44,7 +44,7 @@ const steps = [
     icon: Wrench,
     title: "Custom build & quality check",
     duration: "2–4 weeks after approval",
-    desc: "Your equipment is ordered from the manufacturer and configured to your exact specifications — seating dimensions, drive controls, accessories, and positioning components.",
+    desc: "Your equipment is ordered from the manufacturer and configured to your exact specifications, seating dimensions, drive controls, accessories, and positioning components.",
     checklist: ["Built to your body measurements", "All components configured before shipment", "Quality check performed by our team", "Tracking provided when shipped"],
   },
   {
@@ -60,11 +60,11 @@ const steps = [
 const faqs = [
   {
     q: "Do I need a referral from a doctor or therapist?",
-    a: "For complex rehab technology (CRT) items covered by Medicare or Medicaid, a physician's order and an OT or PT evaluation are required. We guide you through all of this — if you don't have an existing therapist, we can help connect you with one.",
+    a: "For complex rehab technology (CRT) items covered by Medicare or Medicaid, a physician's order and an OT or PT evaluation are required. We guide you through all of this, if you don't have an existing therapist, we can help connect you with one.",
   },
   {
     q: "How long does the entire process take?",
-    a: "The timeline varies depending on insurance and complexity. For standard equipment with existing documentation, 6–10 weeks is typical. For complex CRT with custom seating, 12–16 weeks is common. We're transparent throughout — you'll always know where things stand.",
+    a: "The timeline varies depending on insurance and complexity. For standard equipment with existing documentation, 6–10 weeks is typical. For complex CRT with custom seating, 12–16 weeks is common. We're transparent throughout, you'll always know where things stand.",
   },
   {
     q: "What insurance do you accept?",
@@ -134,7 +134,7 @@ export default function HowItWorksPage() {
               Simple steps, expert support
             </h1>
             <p className="text-white/70 text-lg leading-relaxed">
-              From first contact to in-home delivery — every step is managed by our certified team so you can focus on your health.
+              From first contact to in-home delivery, every step is managed by our certified team so you can focus on your health.
             </p>
           </motion.div>
         </div>
@@ -197,7 +197,7 @@ export default function HowItWorksPage() {
                 We handle insurance, start to finish
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                Insurance documentation for complex rehab technology is demanding — clinical notes, body measurements, functional assessments, and Letters of Medical Necessity all have to meet payer standards. Our team manages all of it.
+                Insurance documentation for complex rehab technology is demanding, clinical notes, body measurements, functional assessments, and Letters of Medical Necessity all have to meet payer standards. Our team manages all of it.
               </p>
               <Link href="/consultation" className="btn btn-primary">
                 Check My Coverage

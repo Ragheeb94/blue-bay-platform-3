@@ -12,7 +12,7 @@ const audiences = [
     href: "/who-we-help#patients",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80&fit=crop",
     heading: "Mobility that fits your life",
-    desc: "Whether you're navigating a new diagnosis, a changing condition, or simply need an upgrade — we match equipment to your exact body, environment, and goals.",
+    desc: "Whether you're navigating a new diagnosis, a changing condition, or simply need an upgrade, we match equipment to your exact body, environment, and goals.",
     features: ["Certified ATP evaluation", "Custom fit and configuration", "Full insurance handling", "In-home delivery & training"],
   },
   {
@@ -21,7 +21,7 @@ const audiences = [
     href: "/who-we-help#caregivers",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80&fit=crop",
     heading: "Support for the people who give it",
-    desc: "Helping a loved one find the right equipment can feel overwhelming. We guide your family through every step — from first call to delivery day.",
+    desc: "Helping a loved one find the right equipment can feel overwhelming. We guide your family through every step, from first call to delivery day.",
     features: ["Plain-language guidance", "Family included in evaluation", "Caregiver training included", "Ongoing support access"],
   },
   {
@@ -30,7 +30,7 @@ const audiences = [
     href: "/who-we-help#clinicians",
     image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=700&q=80&fit=crop",
     heading: "A CRT partner your patients can trust",
-    desc: "We work alongside your clinical team — not around them. Credentialed ATPs, thorough documentation, and a process built for referral partners.",
+    desc: "We work alongside your clinical team, not around them. Credentialed ATPs, thorough documentation, and a process built for referral partners.",
     features: ["Direct ATP collaboration", "Clinical documentation support", "Fast referral turnaround", "Transparent progress updates"],
   },
 ];
@@ -45,7 +45,7 @@ export default function AudienceSection() {
             Built for every person in the journey
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            From patients to caregivers to clinicians — we have a clear process for everyone involved.
+            From patients to caregivers to clinicians, we have a clear process for everyone involved.
           </p>
         </AnimateIn>
 

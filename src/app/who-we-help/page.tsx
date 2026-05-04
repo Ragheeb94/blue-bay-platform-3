@@ -11,8 +11,8 @@ const audiences = [
     icon: User,
     label: "Patients & Users",
     heading: "Mobility that fits your life",
-    intro: "Whether you've recently received a diagnosis, your condition has changed, or your current equipment no longer serves your needs — we're built to help you find the right solution, configured around your specific body and lifestyle.",
-    body: "Our certified ATPs (Assistive Technology Professionals) conduct a thorough clinical evaluation — in your home or clinic — working alongside your existing therapy team. We don't just hand you a chair. We configure every component, verify insurance coverage, and follow up after delivery to make sure everything is working for you.",
+    intro: "Whether you've recently received a diagnosis, your condition has changed, or your current equipment no longer serves your needs, we're built to help you find the right solution, configured around your specific body and lifestyle.",
+    body: "Our certified ATPs (Assistive Technology Professionals) conduct a thorough clinical evaluation, in your home or clinic, working alongside your existing therapy team. We don't just hand you a chair. We configure every component, verify insurance coverage, and follow up after delivery to make sure everything is working for you.",
     features: [
       "Certified ATP evaluation (in-home or clinic)",
       "Equipment configured to your body dimensions and goals",
@@ -29,8 +29,8 @@ const audiences = [
     icon: Heart,
     label: "Caregivers & Families",
     heading: "Support for the people who give it",
-    intro: "Navigating mobility equipment for a loved one can feel overwhelming — especially when insurance, clinical requirements, and equipment options all seem to require a specialist to understand. We make this manageable.",
-    body: "From the first call to delivery day, we guide your entire family through the process. We explain every step in plain language, include caregivers in the evaluation, and train everyone involved in safe use. You won't be left holding paperwork or chasing approvals — we handle that.",
+    intro: "Navigating mobility equipment for a loved one can feel overwhelming, especially when insurance, clinical requirements, and equipment options all seem to require a specialist to understand. We make this manageable.",
+    body: "From the first call to delivery day, we guide your entire family through the process. We explain every step in plain language, include caregivers in the evaluation, and train everyone involved in safe use. You won't be left holding paperwork or chasing approvals, we handle that.",
     features: [
       "Plain-language guidance throughout the process",
       "Family members included in evaluation sessions",
@@ -47,7 +47,7 @@ const audiences = [
     icon: Stethoscope,
     label: "OTs & Clinicians",
     heading: "A CRT partner your patients can trust",
-    intro: "We work alongside your clinical team — not around them. Our certified ATPs collaborate directly with OTs, PTs, physicians, and rehab centres to ensure every evaluation and equipment recommendation is clinically grounded.",
+    intro: "We work alongside your clinical team, not around them. Our certified ATPs collaborate directly with OTs, PTs, physicians, and rehab centres to ensure every evaluation and equipment recommendation is clinically grounded.",
     body: "We understand that your reputation depends on the referral partners you choose. That's why we prioritize documentation quality, communication, and outcomes. We provide timely updates, prepare thorough Letters of Medical Necessity, and handle insurance submission so you can focus on clinical care.",
     features: [
       "Direct collaboration with referring OTs and PTs",
@@ -82,7 +82,7 @@ export default function WhoWeHelpPage() {
               Built for every person in the mobility journey
             </h1>
             <p className="text-white/70 text-lg leading-relaxed">
-              From the person in the chair to the clinician writing the prescription — we have a clear, supported process for everyone involved.
+              From the person in the chair to the clinician writing the prescription, we have a clear, supported process for everyone involved.
             </p>
           </motion.div>
         </div>

@@ -35,7 +35,7 @@ export const products: Product[] = [
     category: "power-wheelchairs",
     categoryLabel: "Power Wheelchairs",
     tagline: "Rear-wheel drive rehab power chair with full Corpus 3D seating integration",
-    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&fit=crop",
+    image: "https://permobilwebcdn.azureedge.net/media/c0gnrvm2/permobil_m3_sideleft_gold.jpg",
     isFeatured: true,
     badges: ["CRT Required", "Insurance Eligible", "Custom Fit"],
     goodFor: [
@@ -70,7 +70,7 @@ export const products: Product[] = [
     category: "power-wheelchairs",
     categoryLabel: "Power Wheelchairs",
     tagline: "Front-wheel drive power chair with integrated vertical standing system",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80&fit=crop",
+    image: "https://permobilwebcdn.azureedge.net/media/p44farhr/f5-corpus-feature.jpg",
     isFeatured: true,
     badges: ["CRT Required", "Insurance Eligible", "Active Positioning"],
     goodFor: [
@@ -88,7 +88,7 @@ export const products: Product[] = [
       { label: "Standing Range", value: "0–90° (power standing)" },
       { label: "Tilt Range", value: "0–45°" },
       { label: "Recline Range", value: "90–175°" },
-      { label: "Leg Elevation", value: "Yes — power" },
+      { label: "Leg Elevation", value: "Yes, power" },
       { label: "Max Speed", value: "6 mph" },
       { label: "Weight Capacity", value: "265 lbs (120 kg)" },
       { label: "Electronics", value: "R-net with iSEAT" },
@@ -105,7 +105,7 @@ export const products: Product[] = [
     category: "power-wheelchairs",
     categoryLabel: "Power Wheelchairs",
     tagline: "Mid-wheel drive power chair for tight indoor navigation with full positioning",
-    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&fit=crop",
+    image: "https://permobilwebcdn.azureedge.net/media/k2rpbq3s/power_header_images_m5-corpus-02.png",
     badges: ["CRT Required", "Insurance Eligible", "Tilt-in-Space"],
     goodFor: [
       "Full-time users who need excellent indoor maneuverability",
@@ -139,7 +139,7 @@ export const products: Product[] = [
     category: "power-wheelchairs",
     categoryLabel: "Power Wheelchairs",
     tagline: "Rehab-grade rear-wheel drive with 40° tilt and Q-Logic 3 electronics",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80&fit=crop",
+    image: "https://www.sunrisemedical.ca/getattachment/Power-Wheelchairs/Quickie/Folding-Power-Wheelchairs/Q50-R-Carbon/beauty-mm.webp.aspx?width=600",
     isFeatured: true,
     badges: ["CRT Required", "Insurance Eligible", "Tilt-in-Space"],
     goodFor: [
@@ -163,7 +163,7 @@ export const products: Product[] = [
       { label: "Alternative Access", value: "Head array, sip-and-puff compatible" },
     ],
     description:
-      "The Quickie Q50 R delivers robust rear-wheel drive performance with 40 degrees of power tilt for clinical pressure relief and positioning. The Q-Logic 3 electronics platform supports proportional joystick, head array, sip-and-puff, and switch access — making it appropriate for a wide range of users with motor limitations. Covered by Medicare Part B with a completed clinical evaluation and LMN.",
+      "The Quickie Q50 R delivers robust rear-wheel drive performance with 40 degrees of power tilt for clinical pressure relief and positioning. The Q-Logic 3 electronics platform supports proportional joystick, head array, sip-and-puff, and switch access, making it appropriate for a wide range of users with motor limitations. Covered by Medicare Part B with a completed clinical evaluation and LMN.",
     crtRequired: true,
   },
   {
@@ -174,7 +174,7 @@ export const products: Product[] = [
     category: "power-wheelchairs",
     categoryLabel: "Power Wheelchairs",
     tagline: "Mid-wheel drive power chair with advanced obstacle climb and active stability",
-    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&fit=crop",
+    image: "https://www.sunrisemedical.ca/getmedia/30ffcecc-aecc-45cb-b77b-d07a9d6a6bbd/beauty_1.jpg.aspx?width=600",
     badges: ["CRT Required", "Insurance Eligible"],
     goodFor: [
       "Active users who navigate varied terrain",
@@ -210,7 +210,7 @@ export const products: Product[] = [
     category: "manual-wheelchairs",
     categoryLabel: "Manual Wheelchairs",
     tagline: "Fully custom titanium ultralight rigid frame built to exact body measurements",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&fit=crop",
+    image: "https://www.sunrisemedical.ca/getmedia/90e92afb-daa5-4c6e-8dee-e8a77cdc252f/product-quickie-xenon.jpg.aspx?width=600",
     isFeatured: true,
     badges: ["CRT Required", "Ultralight", "Custom Fit", "Insurance Eligible"],
     goodFor: [
@@ -228,7 +228,7 @@ export const products: Product[] = [
       { label: "Frame Material", value: "Aerospace-grade titanium" },
       { label: "Frame Weight", value: "From 14 lbs (6.4 kg)" },
       { label: "Configuration", value: "Rigid (non-folding)" },
-      { label: "Customization", value: "Full — seat width, depth, height, dump, camber" },
+      { label: "Customization", value: "Full, seat width, depth, height, dump, camber" },
       { label: "Axle", value: "Adjustable push-to-lock" },
       { label: "Warranty", value: "Lifetime frame" },
       { label: "HCPCS", value: "K0005 (ultralight)" },
@@ -246,7 +246,7 @@ export const products: Product[] = [
     category: "manual-wheelchairs",
     categoryLabel: "Manual Wheelchairs",
     tagline: "Rigid aluminum ultralight frame with sport-influenced geometry",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&fit=crop",
+    image: "https://www.sunrisemedical.ca/getattachment/Manual-Wheelchairs/Quickie/folding-wheelchairs/Quickie-2-Family/sport.jpg.aspx",
     badges: ["CRT Required", "Ultralight", "Custom Fit"],
     goodFor: [
       "Active manual chair users who want a rigid frame at lower weight",
@@ -261,7 +261,7 @@ export const products: Product[] = [
       { label: "Frame Material", value: "Aircraft-grade aluminum" },
       { label: "Frame Weight", value: "From 17 lbs (7.7 kg)" },
       { label: "Configuration", value: "Rigid" },
-      { label: "Back Height", value: "Adjustable — low, standard, high" },
+      { label: "Back Height", value: "Adjustable, low, standard, high" },
       { label: "Camber", value: "0°, 3°, 6° options" },
       { label: "HCPCS", value: "K0005 (ultralight)" },
       { label: "Warranty", value: "5-year frame" },
@@ -366,7 +366,7 @@ export const products: Product[] = [
       { label: "Warranty", value: "2 years" },
     ],
     description:
-      "The ROHO Quadtro Select uses individual interconnected air cells in four independently adjustable quadrants to offload pressure at bony prominences. Correct inflation is critical — our team performs setup and inflation as part of your seating evaluation to ensure therapeutic benefit. Now distributed by Permobil as part of their pressure management portfolio.",
+      "The ROHO Quadtro Select uses individual interconnected air cells in four independently adjustable quadrants to offload pressure at bony prominences. Correct inflation is critical, our team performs setup and inflation as part of your seating evaluation to ensure therapeutic benefit. Now distributed by Permobil as part of their pressure management portfolio.",
     crtRequired: false,
   },
 
@@ -379,11 +379,11 @@ export const products: Product[] = [
     category: "power-scooters",
     categoryLabel: "Power Scooters",
     tagline: "5-piece disassembling travel scooter for community independence",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop",
+    image: "https://www.pridemobility.com/go-go-travel-mobility/images/feature-image.jpg",
     badges: ["Insurance Eligible"],
     goodFor: [
       "Community errands, shopping, and outings",
-      "Travelers — disassembles for car trunks and airports",
+      "Travelers, disassembles for car trunks and airports",
       "Users with mild-to-moderate mobility limitations",
       "Individuals who can stand briefly for transfers",
     ],
@@ -413,7 +413,7 @@ export const products: Product[] = [
     category: "power-scooters",
     categoryLabel: "Power Scooters",
     tagline: "Full-featured 4-wheel scooter with adjustable captain's seat and long range",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop",
+    image: "https://www.pridemobility.com/jazzy-power-chairs/jazzy-elite-es/images/feature-image.jpg",
     isFeatured: true,
     badges: ["Insurance Eligible"],
     goodFor: [
@@ -436,7 +436,7 @@ export const products: Product[] = [
       { label: "Ground Clearance", value: "3 inches" },
     ],
     description:
-      "The Pride Revo 2.0 is a full-featured 4-wheel scooter with an adjustable captain's seat, armrests, and a long 18.6-mile range — ideal for users who rely on their scooter throughout the day. The 4-wheel base provides enhanced stability on uneven surfaces, and the large front basket adds everyday practicality. Covered by Medicare for qualifying diagnoses.",
+      "The Pride Revo 2.0 is a full-featured 4-wheel scooter with an adjustable captain's seat, armrests, and a long 18.6-mile range, ideal for users who rely on their scooter throughout the day. The 4-wheel base provides enhanced stability on uneven surfaces, and the large front basket adds everyday practicality. Covered by Medicare for qualifying diagnoses.",
     crtRequired: false,
   },
 
@@ -467,7 +467,7 @@ export const products: Product[] = [
       { label: "Brake System", value: "Loop-lock with safety block" },
       { label: "Height Range", value: "31–39 inches" },
       { label: "Weight Capacity", value: "265 lbs (120 kg)" },
-      { label: "Folding", value: "Yes — compact fold" },
+      { label: "Folding", value: "Yes, compact fold" },
     ],
     description:
       "The Future Mobility Carbon Rollator weighs under 5 lbs, making it the lightest clinical rollator in our catalog. Carbon fibre construction eliminates the fatigue of heavier aluminum frames over longer walking distances. Loop-lock brakes and a non-slip rubber handle ensure safe use on all indoor and paved surfaces.",
@@ -496,11 +496,11 @@ export const products: Product[] = [
     specs: [
       { label: "Frame", value: "Aluminum alloy" },
       { label: "Weight", value: "13.5 lbs (6.1 kg)" },
-      { label: "Seat", value: "Padded — 17 inch height" },
+      { label: "Seat", value: "Padded, 17 inch height" },
       { label: "Storage", value: "Large underseat basket" },
       { label: "Wheel Size", value: "6-inch front, 6-inch rear" },
       { label: "Weight Capacity", value: "300 lbs (136 kg)" },
-      { label: "Folding", value: "Yes — loop-lock mechanism" },
+      { label: "Folding", value: "Yes, loop-lock mechanism" },
     ],
     description:
       "The Future Mobility 4-Wheel Rollator provides stable four-point support with a padded seat for rest breaks, loop-lock brakes, and a large underseat basket for carrying essentials. Designed for active older adults and users who walk regularly with intermittent rest needs. Medicare may cover with appropriate diagnosis code.",
@@ -526,12 +526,12 @@ export const products: Product[] = [
       "Users who need to rest frequently (no seat)",
     ],
     specs: [
-      { label: "Frame", value: "Aluminum — corrosion resistant" },
+      { label: "Frame", value: "Aluminum, corrosion resistant" },
       { label: "Weight", value: "5.5 lbs (2.5 kg)" },
       { label: "Height Range", value: "32–38 inches" },
       { label: "Weight Capacity", value: "350 lbs (158 kg)" },
       { label: "Front Wheels", value: "5-inch non-marking swivel" },
-      { label: "Folding", value: "Yes — compact fold" },
+      { label: "Folding", value: "Yes, compact fold" },
     ],
     description:
       "The Future Mobility Folding Walker is the lightest walker in our catalog at 5.5 lbs. The front 5-inch swivel wheels reduce floor friction for smooth indoor transitions while the rear legs provide full weight-bearing stability. Folds flat for transport and storage. Eligible for Medicare Part B coverage with qualifying diagnosis.",
@@ -563,9 +563,9 @@ export const products: Product[] = [
       { label: "Material", value: "Anodized aluminum + ABS plastic" },
       { label: "Seat", value: "Sliding seat with padded backrest" },
       { label: "Weight Capacity", value: "400 lbs (181 kg)" },
-      { label: "Leg Height", value: "Adjustable — 14–22 inches" },
+      { label: "Leg Height", value: "Adjustable, 14–22 inches" },
       { label: "Seat Width", value: "15 inches" },
-      { label: "Folding", value: "Yes — for storage" },
+      { label: "Folding", value: "Yes, for storage" },
       { label: "HCPCS", value: "E0240" },
     ],
     description:
@@ -578,15 +578,15 @@ export const testimonials = [
   {
     id: 1,
     name: "Sandra M.",
-    role: "Power chair user — Los Angeles, CA",
+    role: "Power chair user, Los Angeles, CA",
     rating: 5,
     quote:
-      "After two years of fighting with my old supplier, Blue Bay got my Permobil approved in 6 weeks. They handled everything — I just showed up for the fitting.",
+      "After two years of fighting with my old supplier, Blue Bay got my Permobil approved in 6 weeks. They handled everything, I just showed up for the fitting.",
   },
   {
     id: 2,
     name: "Dr. Rachel Torres",
-    role: "Occupational Therapist — Orange County, CA",
+    role: "Occupational Therapist, Orange County, CA",
     rating: 5,
     quote:
       "I've referred over a dozen patients to Blue Bay. Their ATPs are credentialed, their documentation is thorough, and my patients always come back satisfied.",
@@ -594,7 +594,7 @@ export const testimonials = [
   {
     id: 3,
     name: "James H.",
-    role: "Caregiver — San Diego, CA",
+    role: "Caregiver, San Diego, CA",
     rating: 5,
     quote:
       "My father needed a power chair but we had no idea where to start. Blue Bay walked us through every step, including insurance. We felt supported the entire time.",
@@ -602,7 +602,7 @@ export const testimonials = [
   {
     id: 4,
     name: "Maria L.",
-    role: "Manual chair user — Anaheim, CA",
+    role: "Manual chair user, Anaheim, CA",
     rating: 5,
     quote:
       "The TiLite they ordered for me fits perfectly. The evaluation was thorough and they clearly knew what they were doing. Completely different experience from anywhere else I tried.",

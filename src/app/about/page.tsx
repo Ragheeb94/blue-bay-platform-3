@@ -8,7 +8,7 @@ import CTABanner from "@/components/sections/CTABanner";
 const timeline = [
   { year: "2003", title: "Medics Mobility Inc. founded", desc: "Launched in Ontario, Canada with a focus on complex rehab technology for clients with neurological and physical disabilities." },
   { year: "2010", title: "ATP team expands", desc: "Grew our team of certified ATPs and established clinical partnerships with major rehab centres across Ontario." },
-  { year: "2016", title: "Standardized clinical process", desc: "Developed our intake, evaluation, and documentation workflow — the same process now used in all Blue Bay evaluations." },
+  { year: "2016", title: "Standardized clinical process", desc: "Developed our intake, evaluation, and documentation workflow, the same process now used in all Blue Bay evaluations." },
   { year: "2024", title: "Blue Bay Mobility opens in California", desc: "Expanded to Tustin, CA to serve the U.S. market. Blue Bay brings two decades of CRT expertise to clients across the United States." },
   { year: "Today", title: "Serving Southern California & beyond", desc: "In-home evaluations across Orange County, LA County, San Diego, Riverside, and San Bernardino. Nationwide equipment shipping." },
 ];
@@ -18,7 +18,7 @@ const competencies = [
   { title: "Seating & Positioning", desc: "Deep expertise in pressure management, posture support, and long-term positioning outcomes." },
   { title: "Power Mobility Setup", desc: "Drive control programming, seating function configuration, and alternative access setup." },
   { title: "Insurance Navigation", desc: "Medicare, Medicaid, and private insurance documentation prepared and submitted by our team." },
-  { title: "Care Coordination", desc: "We communicate across the full care team — client, caregiver, therapist, physician." },
+  { title: "Care Coordination", desc: "We communicate across the full care team, client, caregiver, therapist, physician." },
   { title: "Service & Maintenance", desc: "Ongoing repairs, troubleshooting, and preventive maintenance scheduling." },
 ];
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
               Two decades of complex rehab expertise
             </h1>
             <p className="text-white/70 text-lg leading-relaxed">
-              Blue Bay Mobility is the U.S. extension of Medics Mobility Inc. — an Ontario-based CRT provider established in 2003. We bring our clinical process, certified expertise, and outcomes-focused practice to clients across the United States.
+              Blue Bay Mobility is the U.S. extension of Medics Mobility Inc., an Ontario-based CRT provider established in 2003. We bring our clinical process, certified expertise, and outcomes-focused practice to clients across the United States.
             </p>
           </motion.div>
         </div>

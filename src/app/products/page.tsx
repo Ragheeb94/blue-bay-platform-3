@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Products",
-  description: "Browse our full catalog of mobility equipment — power wheelchairs, manual wheelchairs, scooters, seating, walkers, and transfer aids.",
+  description: "Browse our full catalog of mobility equipment, power wheelchairs, manual wheelchairs, scooters, seating, walkers, and transfer aids.",
 };
 
 export default function ProductsPage() {

@@ -28,7 +28,7 @@ export default function HeroSection() {
 
       <div className="container relative z-10 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left — Text */}
+          {/* Left, Text */}
           <div>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -104,7 +104,7 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right — Image */}
+          {/* Right, Image */}
           <div className="relative">
             <motion.div
               animate={{ y: [0, -10, 0] }}

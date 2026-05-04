@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
             Hear from people we've helped
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            From first-time equipment users to experienced self-propellers — here's what our clients say.
+            From first-time equipment users to experienced self-propellers, here's what our clients say.
           </p>
         </AnimateIn>
 

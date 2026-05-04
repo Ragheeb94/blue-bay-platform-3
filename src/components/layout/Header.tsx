@@ -49,7 +49,7 @@ export default function Header() {
       <div style={{ background: "var(--navy-dark)" }} className="hidden lg:block">
         <div className="container">
           <div className="flex items-center justify-between py-2 text-xs text-white/70">
-            <span>The U.S. arm of Medics Mobility Inc. — Est. 2003 · Tustin, California</span>
+            <span>The U.S. arm of Medics Mobility Inc., Est. 2003 · Tustin, California</span>
             <div className="flex items-center gap-6">
               <span>Mon–Fri, 9am–5pm Pacific</span>
               <a href="tel:18889990072" className="flex items-center gap-1.5 text-white hover:text-sky-300 transition-colors font-medium">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export default function Footer() {
@@ -9,10 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm"
-                style={{ background: "var(--sky)" }}>
-                BB
-              </div>
+              <Image src="/logo.png" alt="Blue Bay Mobility" width={44} height={44} className="rounded-full" />
               <div>
                 <div className="font-black text-lg">Blue Bay Mobility</div>
                 <div className="text-xs text-white/50 uppercase tracking-wider">Inc.</div>

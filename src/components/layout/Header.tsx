@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 
@@ -70,12 +71,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 lg:h-18">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-              <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-black text-sm"
-                style={{ background: "var(--navy)" }}
-              >
-                BB
-              </div>
+              <Image src="/logo.png" alt="Blue Bay Mobility" width={40} height={40} className="rounded-full" />
               <div>
                 <div className="font-black text-base leading-tight" style={{ color: "var(--navy)" }}>
                   Blue Bay
